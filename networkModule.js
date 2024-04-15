@@ -33,9 +33,9 @@ function getNetworkData() {
 
     // Creates the string with all needed values.
     interfacesArr.forEach(element => {
-        text = text.concat(`Interface: ${element.interface}. `);
+        text = text.concat(`Interface: ${element.interface}.\n `);
         element.interfaceData.forEach(subElement => {
-            text = text.concat(`Family: ${subElement.family}. Direction: ${subElement.direction}. Inter: ${subElement.intern}. `);
+            text = text.concat(`Family: ${subElement.family}.\n Direction: ${subElement.direction}. Inter:\n ${subElement.intern}. `);
         })
         text = text.concat('\n');
     })

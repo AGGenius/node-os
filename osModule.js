@@ -9,7 +9,7 @@ function getSysData() {
         memoryT: "",
         memoryF: "",
         tellData() {
-            return `Name: ${this.name}. Type: ${this.type}. Version: ${this.vers}. Architecture: ${this.arch}. CPU's: ${this.cpu}. Total Memory: ${this.formatMemory(this.memoryT)} MB. Free Memory: ${this.formatMemory(this.memoryF)} MB.`;
+            return `Name: ${this.name}.\n Type: ${this.type}.\n Version: ${this.vers}.\n Architecture: ${this.arch}.\n CPU's: ${this.cpu}.\n Total Memory: ${this.formatMemory(this.memoryT)} MB.\n Free Memory: ${this.formatMemory(this.memoryF)} MB.`;
         },
         formatMemory(memory) {
             return Math.floor(memory/1000000);
