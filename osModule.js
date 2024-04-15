@@ -1,4 +1,5 @@
 function getSysData() {
+    // Object with base values and functions.
     const data = {
         name: "",
         type: "",
@@ -17,6 +18,7 @@ function getSysData() {
 
     const os = require('node:os');
 
+    //Gives value to previously created object.
     data.name =  os.hostname();
     data.type = os.type();
     data.vers = os.version();
@@ -25,7 +27,8 @@ function getSysData() {
     data.memoryT = os.totalmem();
     data.memoryF = os.freemem();
 
+    // Calls object function to display the string with required values.
     return data.tellData();
 }
 
-module.exports = getSysData;
+module.exports = {getSysData};
